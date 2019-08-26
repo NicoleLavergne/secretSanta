@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Secret Santa</title>
+    <link rel="stylesheet" href="santa.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Luckiest+Guy" rel="stylesheet">
+
+
+</head>
+<body>
+    <main>
+        <div class=" names wrapper">
+            <h1>Secret Santa</h1>
+            <p>Add the names of each Santa and hit enter:</p>
+            
+            <form class="nameForm">
+                <label for="text">Santa:</label>
+                <input type="text" name ="text" id="santaName" placeholder="Insert a new name">
+                <input type="submit" value="Add Santa">
+            </form>
+            <ul class="list">
+                <!-- santa names to go here -->
+            </ul>
+        
+            <p>Double check all names before submitting </p>
+            <button class="draw">Draw Names Now</button>
+
+            <div class="endingSelect">
+                <label for="yourName">Select your own name: </label>
+                <select id="select"> 
+                    <option value="default">name</option>
+                </select>
+                <button class="reveal">Reveal Partner</button>
+
+                <div id="results">
+                <!-- stuff goes in here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="santa.js"></script>
+    
+</body>
+</html>

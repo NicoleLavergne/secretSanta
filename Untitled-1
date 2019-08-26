@@ -1,0 +1,19 @@
+const givers = ['bob','sally','billy']
+const receivers = Array.from(givers);
+const santaList = [];
+
+//loop through givers
+// for each giver get a receiver
+// can't get yourself
+// push to a new santaList
+for(let i = 0; i < receivers.length; i++) {
+    if((i + 1) < receivers.length - 1) {
+        santaList.push([receivers[i],receivers[i + 1]]);
+    }
+    else {
+        santaList.push([receivers[i],receivers[0]]);
+    }
+}
+
+[['bob','sally'],['sally','billy'],['billy',bob']]
+
